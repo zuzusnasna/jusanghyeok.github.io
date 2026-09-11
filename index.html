@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="주상혁의 개발자 포트폴리오">
+  <title>주상혁 | Developer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#top">JH.</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#study">Study</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow">JAVA · SPRING BOOT · WEB DEVELOPMENT</p>
+      <h1>안녕하세요,<br><strong>주상혁</strong>입니다.</h1>
+      <p class="hero-text">Java와 Spring Boot를 중심으로 웹 애플리케이션을 만들고,<br>직접 구현하고 부딪히며 성장하는 개발자입니다.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://github.com/zuzusnasna" target="_blank" rel="noopener">GitHub 보기</a>
+        <a class="button" href="#projects">프로젝트 보기</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-heading">
+        <span>01</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <h3>개발을 직접 이해하고 구현하는 과정에 집중합니다.</h3>
+          <p>Java, Servlet, Spring Boot를 학습하며 게시판과 커뮤니티 같은 실제 서비스를 구현해 왔습니다. 데이터베이스와 서버, 화면이 어떻게 연결되는지 직접 확인하면서 문제를 해결하는 것을 중요하게 생각합니다.</p>
+        </div>
+        <div class="info-list">
+          <div><span>NAME</span><strong>주상혁</strong></div>
+          <div><span>FOCUS</span><strong>Java · Spring Boot · Web</strong></div>
+          <div><span>DATABASE</span><strong>Oracle · H2 · SQL</strong></div>
+          <div><span>ENVIRONMENT</span><strong>Linux · Ubuntu · Git</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <span>02</span>
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card"><span>01</span><h3>Backend</h3><p>Java<br>Spring Boot<br>Servlet / JSP</p></article>
+          <article class="skill-card"><span>02</span><h3>Frontend</h3><p>HTML<br>CSS<br>JavaScript</p></article>
+          <article class="skill-card"><span>03</span><h3>Database</h3><p>Oracle<br>H2<br>SQL / JDBC / JPA</p></article>
+          <article class="skill-card"><span>04</span><h3>Dev Tools</h3><p>Git / GitHub<br>IntelliJ IDEA<br>Maven / Gradle</p></article>
+          <article class="skill-card"><span>05</span><h3>OS</h3><p>Windows<br>Linux<br>Ubuntu / Bash</p></article>
+          <article class="skill-card"><span>06</span><h3>Security</h3><p>Spring Security<br>BCrypt<br>Role-based Access</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-heading">
+        <span>03</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <p class="project-type">TEAM / WEB COMMUNITY</p>
+            <h3>게임 커뮤니티</h3>
+            <p>게임별 게시판을 제공하는 커뮤니티 프로젝트입니다. 회원, 게시글, 카테고리, 좋아요/싫어요와 관리자 권한을 구현하며 서버와 데이터베이스의 연결 구조를 학습했습니다.</p>
+            <div class="tags"><span>Java</span><span>Servlet</span><span>HTML/CSS/JS</span><span>Oracle</span><span>Tomcat</span></div>
+            <a class="project-link" href="https://github.com/zuzusnasna/miniproject" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <p class="project-type">SPRING BOOT / MANAGEMENT</p>
+            <h3>장비 관리 시스템</h3>
+            <p>장비 정보를 관리하는 Spring Boot 프로젝트입니다. JPA와 데이터베이스를 사용하고, 사용자 권한과 로그인 보안 기능을 포함해 서비스 구조를 구현했습니다.</p>
+            <div class="tags"><span>Spring Boot</span><span>JPA</span><span>Oracle</span><span>Spring Security</span><span>React</span></div>
+            <a class="project-link" href="https://github.com/zuzusnasna/equipment-management" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <p class="project-type">STUDY / SPRING BOOT</p>
+            <h3>Spring Boot 게시판</h3>
+            <p>Spring Boot 학습 과정에서 게시판을 단계적으로 구현하고 있습니다. 회원가입과 로그인, BCrypt 비밀번호 암호화, Spring Security, 게시글 CRUD 등을 직접 적용했습니다.</p>
+            <div class="tags"><span>Spring Boot</span><span>Spring Security</span><span>BCrypt</span><span>H2</span><span>Thymeleaf</span></div>
+            <a class="project-link" href="https://github.com/zuzusnasna/bootcamp_study2" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">04</div>
+          <div class="project-content">
+            <p class="project-type">STUDY / LINUX</p>
+            <h3>Ubuntu & Linux Study</h3>
+            <p>Ubuntu 환경에서 Linux 기본 명령어와 파일 시스템을 직접 실습하고 기록하는 학습 저장소입니다. 터미널, Shell, Bash, 경로와 디렉터리 관리 등을 정리하고 있습니다.</p>
+            <div class="tags"><span>Linux</span><span>Ubuntu</span><span>Bash</span><span>Shell</span><span>Git</span></div>
+            <a class="project-link" href="https://github.com/zuzusnasna/ubuntu-study" target="_blank" rel="noopener">Repository ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="study" class="section section-gray">
+      <div class="container">
+        <div class="section-heading">
+          <span>04</span>
+          <h2>Study & Growth</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item"><span>JAVA</span><div><h3>Java 기본기와 객체지향</h3><p>문법과 객체지향 개념을 바탕으로 백엔드 개발의 기본기를 학습했습니다.</p></div></div>
+          <div class="timeline-item"><span>SPRING</span><div><h3>Spring Boot & Security</h3><p>DI, AOP, Spring Boot, Spring Security와 BCrypt를 실제 프로젝트에 적용하며 학습하고 있습니다.</p></div></div>
+          <div class="timeline-item"><span>WEB</span><div><h3>게시판과 웹 서비스 구현</h3><p>회원, 인증, 게시글 CRUD, 권한 처리, 데이터베이스 연동 등 서비스의 핵심 기능을 직접 구현했습니다.</p></div></div>
+          <div class="timeline-item"><span>LINUX</span><div><h3>Linux & Ubuntu</h3><p>터미널 환경에 익숙해지기 위해 명령어와 파일 시스템을 직접 실습하며 기록하고 있습니다.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>계속 배우고,<br>직접 만들어가겠습니다.</h2>
+      <p>학습한 내용을 프로젝트로 연결하고, 프로젝트에서 생긴 문제를 다시 공부하며 성장하고 있습니다.</p>
+      <a class="button primary" href="https://github.com/zuzusnasna" target="_blank" rel="noopener">GitHub ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><span>© <span id="year"></span> Jusanghyeok</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

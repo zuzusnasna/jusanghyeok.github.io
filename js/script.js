@@ -65,3 +65,17 @@ async function loadGithubActivity() {
 }
 
 loadGithubActivity();
+
+// SwingFit 프로젝트의 연구 논문을 포트폴리오에서 바로 확인할 수 있도록 링크를 추가합니다.
+const swingfitCard = [...document.querySelectorAll('.project-card')]
+  .find((card) => card.querySelector('h3')?.textContent.trim() === 'SwingFit');
+
+if (swingfitCard) {
+  const paperLink = document.createElement('a');
+  paperLink.className = 'project-link';
+  paperLink.href = 'https://github.com/zuzusnasna/SwingFit/blob/main/DCS_2025_%ED%95%98%EA%B3%84%EC%A2%85%ED%95%A9%ED%95%99%EB%8C%80%ED%9A%8C_%EB%8C%80%ED%95%99%EC%83%9D%EB%85%BC%EB%AC%B8%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C_%EB%85%BC%EB%AC%B8_%EC%86%A1%EC%A3%BC%EB%B0%95%ED%8C%80.pdf';
+  paperLink.target = '_blank';
+  paperLink.rel = 'noopener';
+  paperLink.textContent = 'Research Paper ↗';
+  swingfitCard.querySelector('.project-content').appendChild(paperLink);
+}
